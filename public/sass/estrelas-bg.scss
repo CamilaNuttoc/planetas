@@ -1,0 +1,67 @@
+@function gera-estrelas ($num){
+  $valor: '#{random(2000)}px #{random(2000)}px #fff';
+  @for $i from 2 through $num{
+    $valor: '#{$valor} , #{random(2000)}px #{random(2000)}px #fff';
+  }
+  @return unquote($valor)
+}
+$estrelas-pequenas: gera-estrelas(700);
+$estrelas-medias: gera-estrelas(200);
+$estrelas-grandes: gera-estrelas(50);
+
+#estrelas-sm{
+  width: 1px;
+  height: 1px;
+  box-shadow: $estrelas-pequenas;
+  animation: animEstrela 150s linear infinite;
+    
+  &:after{
+    content: " ";
+    position: absolute;
+    right: 2000px;
+    width: 1px;
+    height: 1px;
+    box-shadow: $estrelas-pequenas;
+  }
+}
+    
+#estrelas-md{
+  width: 2px;
+  height: 2px;
+  box-shadow: $estrelas-medias;
+  animation: animEstrela 100s linear infinite;
+    
+  &:after{
+    content: " ";
+    position: absolute;
+    right: 2000px;
+    width: 2px;
+    height: 2px;
+    box-shadow: $estrelas-medias;
+  }
+}
+    
+#estrelas-lg{
+  width: 3px;
+  height: 3px;
+  box-shadow: $estrelas-grandes;
+  animation: animEstrela 50s linear infinite;
+    
+  &:after{
+    content: " ";
+    position: absolute;
+    right: 2000px;
+    width: 3px;
+    height: 3px;
+    box-shadow: $estrelas-grandes;
+  }
+}
+
+@keyframes animEstrela{
+  from{
+    transform: translateX(0px);
+  }
+  to{
+    transform: translateX(2000px);
+  }
+}

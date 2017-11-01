@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Configurações básicas -->
+    <meta charset="UTF-8"/>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  	<title>Explore os Planetas</title>
+    <meta name="author" content="Camila Nuttoc"/>
+    <meta name="description" content="Aprenda de forma interativa sobre os
+    planetas do nosso sistema solar."/>
+  
+    <!-- Facebook -->
+    <meta property="og:image" content="https://www.universetoday.com/wp-content/uploads/2015/02/9_JupiterSaturn.jpg"/>
+    <meta property="og:description" content="Explore os Planetas é um site
+    que ensina de forma interativa sobre os planetas do sistema solar!"/>
+    <meta property="og:title" content="Explore os Planetas"/>
+  
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Explore os planetas"/>
+    <meta name="twitter:description" content="Interaja com os planetas e
+    aprenda sobre eles."/>
+    <meta name="twitter:image" content="https://www.universetoday.com/wp-content/uploads/2015/02/9_JupiterSaturn.jpg"/>
+  
+    <!-- Style -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' 
+    rel='stylesheet' type='text/css'>
+    <link href='./public/stylesheets/planetas.css' rel='stylesheet' type='text/css'>
+    <link href='./public/stylesheets/estrelas-bg.css' rel='stylesheet' type='text/css'>
+    <link href='./public/stylesheets/footer.css' rel='stylesheet' type='text/css'>
+    <link href='./public/stylesheets/grid.css' rel='stylesheet' type='text/css'>
+  
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src='./public/scripts/planetasInfo.js'></script>
+    <script src='./public/scripts/mudaPlanetas.js'></script>
+  
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="planet.ico" type="image/x-icon">
+  
+  </head>
+  <body>
+    <!-- Parallax de estrelas -->
+    <div id='estrelas-sm'></div>
+    <div id='estrelas-md'></div>
+    <div id='estrelas-lg'></div>
+  
+    <!-- Grid -->
+    <div class="grid-container">
+      <div class="row">
+
+      	<div class="col-1">
+      		<h2>Escolha um planeta</h2>
+  
+          <!-- Carrossel 3D -->
+          <div class="container">
+            <div class="carousel">
+              <div class="planeta terra">
+                <img src="http://www.country1067.com/wp-content/uploads/sites/28/Earth.png">
+    	        </div>
+              <div class="planeta marte">
+                <img src="https://cdn.thinglink.me/api/image/701460274829328384/1240/10/scaletowidth">
+              </div>
+              <div class="planeta jupiter">
+                <img src="http://www.pngmart.com/files/4/Jupiter-Transparent-PNG-279x279.png">
+              </div>
+              <div class="planeta saturno">
+                <img src="http://www.auguriohoroscopo.com/wpaug/wp-content/uploads/2015/09/saturn.png">
+              </div>
+              <div class="planeta urano">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Uranus2-transparent.png/768px-Uranus2-transparent.png">
+              </div>
+              <div class="planeta netuno">
+                <img src="https://thetomatos.com/wp-content/uploads/2016/11/free-planet-neptune-clipart.png">
+              </div>
+              <div class="planeta mercurio">
+                <img src="http://freepngimages.com/wp-content/uploads/2016/05/planet-mercury-transparent-background.png">
+    	        </div>
+              <div class="planeta venus">
+                <img src="http://centrodeestudos.tolentinos.com.br/my/Astrofisica/imagensMenu/venus.png">
+              </div>
+            </div>
+          </div>
+  
+          <!-- Botões para controle do carrossel -->
+          <div id="btnsCtrl">
+            <button class="next"></button>
+            <button class="prev"></button>
+          </div>
+  
+        </div>
+  
+      <div class="col-1 info">
+  
+        <!-- Informações sobre o planeta selecionado -->
+        <h1>Terra</h1>
+        <p>A Terra é o terceiro planeta mais próximo do Sol, o mais denso e o quinto maior dos oito planetas do Sistema Solar. É também o maior dos quatro planetas telúricos. É por vezes designada como Mundo ou Planeta Azul. Lar de milhões de espécies de seres vivos, incluindo os humanos, a Terra é o único corpo celeste onde é conhecida a existência de vida. O planeta formou-se há 4,56 bilhões de anos, e a vida surgiu na sua superfície um bilhão de anos depois. Desde então, a biosfera terrestre alterou significativamente a atmosfera e outros fatores abióticos do planeta, permitindo a proliferação de organismos aeróbicos, bem como a formação de uma camada de ozônio, a qual, em conjunto com o campo magnético terrestre, bloqueia radiação solar prejudicial, permitindo a vida no planeta. As propriedades físicas do planeta, bem como sua história geológica e órbita, permitiram que a vida persistisse durante este período. Acredita-se que a Terra poderá suportar vida durante pelo menos outros 500 milhões de anos.</p>
+  
+      </div>
+  
+    </div>
+  </div>
+  
+  <footer>
+  	<ul>
+  	 <li><a href="#">Visitar portfólio</a></li>
+  	 <li><a href="#">Contato</a></li>
+    </ul>
+  </footer>
+  
+  </body>
+</html>

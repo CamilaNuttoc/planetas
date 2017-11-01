@@ -1,0 +1,26 @@
+/* line 1, ../sass/footer.scss */
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+/* line 5, ../sass/footer.scss */
+footer ul {
+  text-align: center;
+  background: #444;
+  padding: 0;
+}
+/* line 10, ../sass/footer.scss */
+footer li {
+  display: inline-block;
+  margin: 10px;
+}
+/* line 14, ../sass/footer.scss */
+footer a {
+  color: #bbb;
+  text-decoration: none;
+}
+/* line 17, ../sass/footer.scss */
+footer a:hover {
+  color: #fff;
+}

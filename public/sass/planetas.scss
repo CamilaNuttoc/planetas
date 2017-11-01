@@ -1,0 +1,143 @@
+$small-size: "only screen and (max-width: 768px)";
+
+.row{
+  margin-top: 6%;
+}
+.container {
+  margin: 0 auto;
+  width: 250px;
+  perspective: 700px;
+}
+
+.carousel {
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+h2{
+  text-align: center;
+  color: #555;
+  font-family: 'Lato', sans-serif;
+}
+
+.planeta {
+  position: absolute;
+  width: 250px;
+  text-align: center;
+}
+
+img{
+  width: 200px;
+  .terra &, .netuno &{
+    width: 210px;
+  }
+  .marte &, .jupiter &, .urano &, .mercurio &, .venus &, .jupiter &{
+    width: 190px;
+    margin-top: 8px;
+  }
+  .saturno &{
+    margin-top: 30px;
+  }
+}
+
+.terra {
+  -webkit-transform: rotateY(0deg) translateZ(250px);
+  -moz-transform: rotateY(0deg) translateZ(250px);
+  -ms-transform: rotateY(0deg) translateZ(250px);
+  -o-transform: rotateY(0deg) translateZ(250px);
+  transform: rotateY(0deg) translateZ(250px);
+}
+.marte {
+  -webkit-transform: rotateY(45deg) translateZ(250px);
+  -moz-transform: rotateY(45deg) translateZ(250px);
+  -ms-transform: rotateY(45deg) translateZ(250px);
+  -o-transform: rotateY(45deg) translateZ(250px);
+  transform: rotateY(45deg) translateZ(250px);
+}
+.jupiter {
+  -webkit-transform: rotateY(90deg) translateZ(250px);
+  -moz-transform: rotateY(90deg) translateZ(250px);
+  -ms-transform: rotateY(90deg) translateZ(250px);
+  -o-transform: rotateY(90deg) translateZ(250px);
+  transform: rotateY(90deg) translateZ(250px);
+}
+.saturno {
+  -webkit-transform: rotateY(135deg) translateZ(250px);
+  -moz-transform: rotateY(135deg) translateZ(250px);
+  -ms-transform: rotateY(135deg) translateZ(250px);
+  -o-transform: rotateY(135deg) translateZ(250px);
+  transform: rotateY(135deg) translateZ(250px);
+  padding-top: 20px;
+}
+.urano {
+  -webkit-transform: rotateY(180deg) translateZ(250px);
+  -moz-transform: rotateY(180deg) translateZ(250px);
+  -ms-transform: rotateY(180deg) translateZ(250px);
+  -o-transform: rotateY(180deg) translateZ(250px);
+  transform: rotateY(180deg) translateZ(250px);
+} 
+.netuno {
+  /* Translate menor para evitar bug em Firefox */
+  -webkit-transform: rotateY(225deg) translateZ(248px);
+  -moz-transform: rotateY(225deg) translateZ(248px);
+  -ms-transform: rotateY(225deg) translateZ(248px);
+  -o-transform: rotateY(225deg) translateZ(248px);
+  transform: rotateY(225deg) translateZ(248px);
+}
+.mercurio{
+  -webkit-transform: rotateY(270deg) translateZ(250px);
+  -moz-transform: rotateY(270deg) translateZ(250px);
+  -ms-transform: rotateY(270deg) translateZ(250px);
+  -o-transform: rotateY(270deg) translateZ(250px);
+  transform: rotateY(270deg) translateZ(250px);
+}
+
+.venus{
+  -webkit-transform: rotateY(315deg) translateZ(250px);
+  -moz-transform: rotateY(315deg) translateZ(250px);
+  -ms-transform: rotateY(315deg) translateZ(250px);
+  -o-transform: rotateY(315deg) translateZ(250px);
+  transform: rotateY(315deg) translateZ(250px);
+}
+
+#btnsCtrl{
+  position: relative;
+}
+.next, .prev {
+  color: #444;
+  float: left;
+  height: 280px;
+  background: none;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.next, .prev{
+  width: 50%;
+}
+.next { 
+  right: 0;
+}
+.prev {
+  left: 0;
+}
+
+.info{
+  color: #aaa;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+p{
+  padding: 0 80px 60px 80px;
+  background: -webkit-linear-gradient(top, #888, #eee, #888);
+  background: linear-gradient(top, #888, #eee, #888);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @media #{$small-size}{
+    padding: 0 20px 60px 20px;
+  }
+}

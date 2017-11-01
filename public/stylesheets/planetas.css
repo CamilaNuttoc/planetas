@@ -1,0 +1,178 @@
+/* line 3, ../sass/planetas.scss */
+.row {
+  margin-top: 6%;
+}
+
+/* line 6, ../sass/planetas.scss */
+.container {
+  margin: 0 auto;
+  width: 250px;
+  perspective: 700px;
+}
+
+/* line 12, ../sass/planetas.scss */
+.carousel {
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+/* line 17, ../sass/planetas.scss */
+h2 {
+  text-align: center;
+  color: #555;
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 23, ../sass/planetas.scss */
+.planeta {
+  position: absolute;
+  width: 250px;
+  text-align: center;
+}
+
+/* line 29, ../sass/planetas.scss */
+img {
+  width: 200px;
+}
+/* line 31, ../sass/planetas.scss */
+.terra img, .netuno img {
+  width: 210px;
+}
+/* line 34, ../sass/planetas.scss */
+.marte img, .jupiter img, .urano img, .mercurio img, .venus img, .jupiter img {
+  width: 190px;
+  margin-top: 8px;
+}
+/* line 38, ../sass/planetas.scss */
+.saturno img {
+  margin-top: 30px;
+}
+
+/* line 43, ../sass/planetas.scss */
+.terra {
+  -webkit-transform: rotateY(0deg) translateZ(250px);
+  -moz-transform: rotateY(0deg) translateZ(250px);
+  -ms-transform: rotateY(0deg) translateZ(250px);
+  -o-transform: rotateY(0deg) translateZ(250px);
+  transform: rotateY(0deg) translateZ(250px);
+}
+
+/* line 50, ../sass/planetas.scss */
+.marte {
+  -webkit-transform: rotateY(45deg) translateZ(250px);
+  -moz-transform: rotateY(45deg) translateZ(250px);
+  -ms-transform: rotateY(45deg) translateZ(250px);
+  -o-transform: rotateY(45deg) translateZ(250px);
+  transform: rotateY(45deg) translateZ(250px);
+}
+
+/* line 57, ../sass/planetas.scss */
+.jupiter {
+  -webkit-transform: rotateY(90deg) translateZ(250px);
+  -moz-transform: rotateY(90deg) translateZ(250px);
+  -ms-transform: rotateY(90deg) translateZ(250px);
+  -o-transform: rotateY(90deg) translateZ(250px);
+  transform: rotateY(90deg) translateZ(250px);
+}
+
+/* line 64, ../sass/planetas.scss */
+.saturno {
+  -webkit-transform: rotateY(135deg) translateZ(250px);
+  -moz-transform: rotateY(135deg) translateZ(250px);
+  -ms-transform: rotateY(135deg) translateZ(250px);
+  -o-transform: rotateY(135deg) translateZ(250px);
+  transform: rotateY(135deg) translateZ(250px);
+  padding-top: 20px;
+}
+
+/* line 72, ../sass/planetas.scss */
+.urano {
+  -webkit-transform: rotateY(180deg) translateZ(250px);
+  -moz-transform: rotateY(180deg) translateZ(250px);
+  -ms-transform: rotateY(180deg) translateZ(250px);
+  -o-transform: rotateY(180deg) translateZ(250px);
+  transform: rotateY(180deg) translateZ(250px);
+}
+
+/* line 79, ../sass/planetas.scss */
+.netuno {
+  /* Translate menor para evitar bug em Firefox */
+  -webkit-transform: rotateY(225deg) translateZ(248px);
+  -moz-transform: rotateY(225deg) translateZ(248px);
+  -ms-transform: rotateY(225deg) translateZ(248px);
+  -o-transform: rotateY(225deg) translateZ(248px);
+  transform: rotateY(225deg) translateZ(248px);
+}
+
+/* line 87, ../sass/planetas.scss */
+.mercurio {
+  -webkit-transform: rotateY(270deg) translateZ(250px);
+  -moz-transform: rotateY(270deg) translateZ(250px);
+  -ms-transform: rotateY(270deg) translateZ(250px);
+  -o-transform: rotateY(270deg) translateZ(250px);
+  transform: rotateY(270deg) translateZ(250px);
+}
+
+/* line 95, ../sass/planetas.scss */
+.venus {
+  -webkit-transform: rotateY(315deg) translateZ(250px);
+  -moz-transform: rotateY(315deg) translateZ(250px);
+  -ms-transform: rotateY(315deg) translateZ(250px);
+  -o-transform: rotateY(315deg) translateZ(250px);
+  transform: rotateY(315deg) translateZ(250px);
+}
+
+/* line 103, ../sass/planetas.scss */
+#btnsCtrl {
+  position: relative;
+}
+
+/* line 106, ../sass/planetas.scss */
+.next, .prev {
+  color: #444;
+  float: left;
+  height: 280px;
+  background: none;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* line 117, ../sass/planetas.scss */
+.next, .prev {
+  width: 50%;
+}
+
+/* line 120, ../sass/planetas.scss */
+.next {
+  right: 0;
+}
+
+/* line 123, ../sass/planetas.scss */
+.prev {
+  left: 0;
+}
+
+/* line 127, ../sass/planetas.scss */
+.info {
+  color: #aaa;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+/* line 134, ../sass/planetas.scss */
+p {
+  padding: 0 80px 60px 80px;
+  background: -webkit-linear-gradient(top, #888, #eee, #888);
+  background: linear-gradient(top, #888, #eee, #888);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media only screen and (max-width: 768px) {
+  /* line 134, ../sass/planetas.scss */
+  p {
+    padding: 0 20px 60px 20px;
+  }
+}
