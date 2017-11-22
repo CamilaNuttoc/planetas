@@ -10,7 +10,6 @@ body {
 /* line 13, ../sass/grid.scss */
 .grid-container {
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
 }
 /* line 17, ../sass/grid.scss */
